@@ -198,7 +198,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private Observable<D2Progress> syncMetadataObservable() {
         // TODO Sync user metadata
-        return Observable.never();
+
+        return Sdk.d2().syncMetaData();
+        //return Observable.never();
     }
 
     private void downloadData() {
