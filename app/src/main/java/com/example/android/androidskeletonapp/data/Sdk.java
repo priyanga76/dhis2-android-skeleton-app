@@ -8,7 +8,11 @@ public class Sdk {
 
     public static D2Configuration getD2Configuration(Context context) {
         // TODO Add configuration
-
-        return null;
+        D2Configuration configuration = D2Configuration.builder()
+                .appName("priyanga76").appVersion("1.0.0")
+                .context(context)
+                .readTimeoutInSeconds(30).connectTimeoutInSeconds(30).writeTimeoutInSeconds(30)
+                .build();
+                 return configuration;
     }
 }
