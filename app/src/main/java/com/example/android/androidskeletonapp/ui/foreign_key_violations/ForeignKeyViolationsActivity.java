@@ -12,5 +12,6 @@ public class ForeignKeyViolationsActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setUp(R.layout.activity_fk_violations, R.id.fkViolationsToolbar, R.id.fkViolationsRecyclerView);
         // TODO list foreign key violations
+
     }
 }
