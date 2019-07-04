@@ -58,10 +58,22 @@ public class StyleBinderHelper {
 
     public static void setState(State state, ImageView syncIcon) {
         // TODO set state for tracked entity instance
-        if (state == null){
+        if (state == null) {
             syncIcon.setVisibility(View.GONE);
         } else {
             syncIcon.setVisibility(View.VISIBLE);
+            if (state.equals(State.TO_UPDATE) || state.equals(State.TO_POST)|| state.equals(State.TO_DELETE)) {
+                syncIcon.setImageResource(R.drawable.ic_not_sync);
+                setBackgroundColor(R.color.colorAccentAlt, syncIcon);
+            } else if (state.equals(State.ERROR) || state.equals(State.WARNING)) {
+                syncIcon.setImageResource(R.drawable.ic_sync_problem);
+                setBackgroundColor(R.color.colorWarn, syncIcon);
+            } else {
+                syncIcon.setImageResource(R.drawable.ic_sync);
+                setBackgroundColor(R.color.colorAccent, syncIcon);
+            }
         }
     }
+
+
 }
