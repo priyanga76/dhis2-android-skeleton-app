@@ -33,4 +33,11 @@ public class TrackerImportConflictsAdapter extends RecyclerView.Adapter<SubListI
     public int getItemCount() {
         return 0;
     }
+
+    /////
+    public void setTrackerImportConflicts(List<TrackerImportConflict> trackerImportConflicts) {
+        this.trackerImportConflictList = trackerImportConflicts;
+        notifyDataSetChanged();
+    }
+
 }

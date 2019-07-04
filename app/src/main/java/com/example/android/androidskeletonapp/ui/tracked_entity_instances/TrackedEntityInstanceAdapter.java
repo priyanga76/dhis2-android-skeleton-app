@@ -89,6 +89,7 @@ public class TrackedEntityInstanceAdapter extends PagedListAdapter<TrackedEntity
         }
     }
 
+    ////
     private void setConflicts(String trackedEntityInstanceUid, ListItemWithSyncHolder holder) {
         TrackerImportConflictsAdapter adapter = new TrackerImportConflictsAdapter();
         holder.recyclerView.setAdapter(adapter);
