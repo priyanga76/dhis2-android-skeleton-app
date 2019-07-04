@@ -23,6 +23,7 @@ import static com.example.android.androidskeletonapp.data.service.AttributeHelpe
 import static com.example.android.androidskeletonapp.data.service.AttributeHelper.attributeResidentInCatchmentAreaUid;
 import static com.example.android.androidskeletonapp.data.service.AttributeHelper.attributeYearOfBirthUid;
 import static com.example.android.androidskeletonapp.data.service.StyleBinderHelper.setBackgroundColor;
+import static com.example.android.androidskeletonapp.data.service.StyleBinderHelper.setState;
 
 public class TrackedEntityInstanceAdapter extends PagedListAdapter<TrackedEntityInstance, ListItemWithSyncHolder> {
 
@@ -52,7 +53,7 @@ public class TrackedEntityInstanceAdapter extends PagedListAdapter<TrackedEntity
         // TODO show the correct syncIcon for each tracked entity instance state
         // TODO - setState(trackedEntityInstance.state(), holder.syncIcon);
 
-
+        setState(trackedEntityInstance.state(), holder.syncIcon);
 
 
 
