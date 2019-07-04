@@ -51,6 +51,12 @@ public class TrackedEntityInstanceAdapter extends PagedListAdapter<TrackedEntity
 
         // TODO show the correct syncIcon for each tracked entity instance state
         // TODO - setState(trackedEntityInstance.state(), holder.syncIcon);
+
+
+
+
+
+
     }
 
     private String valueAt(List<TrackedEntityAttributeValue> values, String attributeUid) {
