@@ -7,9 +7,16 @@ import com.example.android.androidskeletonapp.ui.base.SubListItemHolder;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.hisp.dhis.android.core.imports.TrackerImportConflict;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class TrackerImportConflictsAdapter extends RecyclerView.Adapter<SubListItemHolder> {
 
     // TODO bind conflicts to sub_list_item.xml
+    private List<TrackerImportConflict> trackerImportConflictList = new ArrayList<>();
+
 
     @NonNull
     @Override
